@@ -30,16 +30,9 @@ class CouponDispenser:
         self.customer_roster = []
         self.issued_indices = []
     def __str__(self):
-        """
-        Return a single string with all coupons in coupon_cards joined by pipes ('|').
-        If coupon_cards is empty, return an empty string "".
-
-        Returns:
-            str
-        """
-        # TODO: Implement per instructions
-        pass
-
+        if len(self.coupon_cards) == 0:
+            return ""
+        return "|".join(self.coupon_cards)
     def issue_coupon(self, name):
         """
         Assign name with a random coupon. If name is already assigned a coupon, return it.
