@@ -75,7 +75,10 @@ class CouponDispenser:
         for i in range(len(self.coupon_cards)):
             coupon = self.coupon_cards[i]
             count = 0
-            
+            for issued in self.issued_indices:
+                if issued == i:
+                    count += 1
+            print(coupon + " distribution count: " + str(count) + ".")
 def main():
     """
     Driver function:
