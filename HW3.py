@@ -72,7 +72,10 @@ class CouponDispenser:
         if len(self.issued_indices) == 0:
             print("Empty")
             return
-        
+        for i in range(len(self.coupon_cards)):
+            coupon = self.coupon_cards[i]
+            count = 0
+            
 def main():
     """
     Driver function:
