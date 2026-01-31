@@ -57,7 +57,7 @@ class CouponDispenser:
             elif user_input == "show":
                 for i in range(len(self.customer_roster)):
                     name = self.customer_roster[i]
-                    coupon_index = self.issued_indicies[i]
+                    coupon_index = self.issued_indices[i]
                     coupon = self.coupon_cards[coupon_index]
                     print(name + ": " + coupon)
             else:
